@@ -20,6 +20,7 @@ int Count(int[] array){
 
 int num = Length("input array length: ");
 int[] array = new int [num];
+
 Fillarray(array);
 Printarray(array);
 System.Console.WriteLine(Count(array));

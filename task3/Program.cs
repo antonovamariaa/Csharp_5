@@ -1,7 +1,7 @@
 ﻿void Fillarray(double[] arr, int len, int min, int max){
     Random rand = new Random();
     for (int i = 0; i<len; i++){
-    arr[i] = Math.Round(rand.Next(min,max)+rand.NextDouble(),3);}}
+    arr[i] = Math.Round(rand.Next(min,max)+rand.NextDouble(),2);}}
 
 void Printarray(double[] arr){
     System.Console.WriteLine(string.Join(" ", arr));}
@@ -27,12 +27,13 @@ double Diff (double[] array) {
     for (int i = 0; i<array.Length; i++){
         if (array[i]>max){max = array[i];}
         else if (array[i]<min){min = array[i];}}
-    return Math.Round(max-min, 3);}
+    return Math.Round(max-min, 2);}
 
 int arlen = Length("input length: ");
 int minnum = Minnum("input minimal number: ");
 int maxnum = Maxnum("input maximum number: ");
 double[] array = new double[arlen];
+
 Fillarray(array, arlen, minnum, maxnum);
 Printarray(array);
 System.Console.WriteLine(Diff(array));
