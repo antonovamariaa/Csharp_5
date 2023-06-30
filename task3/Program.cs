@@ -39,13 +39,3 @@ Printarray(array);
 System.Console.WriteLine(Diff(array));
 
 
-
-/*
-//генерация массива из 5 чисел, дробные
-double[] array = new double[5];
-Random rand = new Random();
-for (int i = 0; i<5; i++){
-    array[i] = Math.Round(rand.Next(1,22)+rand.NextDouble(),1);
-}
-System.Console.WriteLine(string.Join("  ", array));
-*/
