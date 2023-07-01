@@ -6,20 +6,10 @@
 void Printarray(double[] arr){
     System.Console.WriteLine(string.Join(" ", arr));}
 
-int Maxnum (string text) {
+int Input (string text) {
     System.Console.Write(text);
-    int max = Convert.ToInt32(System.Console.ReadLine());
-    return max;}
-
-int Minnum (string text) {
-    System.Console.Write(text);
-    int min = Convert.ToInt32(System.Console.ReadLine());
-    return min;}
-
-int Length (string text) {
-    System.Console.Write(text);
-    int arlen = Convert.ToInt32(System.Console.ReadLine());
-    return arlen;}
+    int num = Convert.ToInt32(System.Console.ReadLine());
+    return num;}
 
 double Diff (double[] array) {
     double min = array[0];
@@ -29,9 +19,9 @@ double Diff (double[] array) {
         else if (array[i]<min){min = array[i];}}
     return Math.Round(max-min, 2);}
 
-int arlen = Length("input length: ");
-int minnum = Minnum("input minimal number: ");
-int maxnum = Maxnum("input maximum number: ");
+int arlen = Input("input length: ");
+int minnum = Input("input minimal number: ");
+int maxnum = Input("input maximum number: ");
 double[] array = new double[arlen];
 
 Fillarray(array, arlen, minnum, maxnum);
